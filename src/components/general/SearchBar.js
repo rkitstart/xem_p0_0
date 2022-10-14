@@ -1,50 +1,62 @@
+import '/Users/kumarssw/MyProjects/xem/src/css/components/searchBar.css';
 import React, {useState} from 'react';
 
 function SearchBar() {
-    const [searchInput, setSearchInput] = useState("");
-    const searchList = [
-        { subSearch: "PanditJi", fullSearch: "PanditJi for Housewarming" },
-        { subSearch: "PanditJi", fullSearch: "PanditJi for Ganesh Pooja" },
-        { subSearch: "Event Manager", fullSearch: "Event Manager for Birthday Celebration" },
-        { subSearch: "Event Manager", fullSearch: "Event Manager for Marriage Anniversary" },
+    const [searchVal, setSearchVal] = React.useState('');
+
+    let products = [
+        'apples', 'bananas', 'grapefruit', 'kiwi', 'avocados',
+        'lettuce', 'tomatoes', 'cheese', 'bread', 'yogurt',
+        'peas', 'carrots', 'broccoli', 'beans', 'pizza',
+        'pasta', 'rice', 'cereal', 'butter', 'milk',
+        'eggs', 'onions', 'garlic', 'honey', 'soup',
+        'salt', 'pepper', 'oregano', 'basil', 'paprika'
     ];
-    const handleChange = (e) => {
-        e.preventDefault();
-        setSearchInput(e.target.value);
-    };
 
-    if (searchInput.length > 0) {
-        searchList.filter((searchElement) => {
-            return searchElement.name.match(searchInput);
-        });
+    const handleInput = (e) => {
+        setSearchVal(e.target.value);
     }
-    return <div>
 
-        <input
-            type="search"
-            placeholder="Search here"
-            onChange={handleChange}
-            value={searchInput} />
+    const handleClearBtn = () => {
+        setSearchVal('');
+    }
 
-        <table>
-            <tr>
-                <th>SubSearch</th>
-                <th>FullSearch</th>
-            </tr>
+    const filteredProducts = products.filter((product) => {
+        return product.includes(searchVal.toLowerCase());
+    });
 
-            {searchList.map((searchElement) => {
-
-                <div>
-                    <tr>
-                        <td>{searchElement.subSearch}</td>
-                        <td>{searchElement.fullSearch}</td>
-                    </tr>
-                </div>
-
-            })}
-        </table>
-
-    </div>
+    return (
+        <div className='container'>
+            <div className='input-wrap'>
+                <i className="fas fa-search"></i>
+                <label
+                    for="product-search"
+                    id="input-label"
+                >
+                    Product Search
+                </label>
+                <input
+                    onChange={handleInput}
+                    value={searchVal}
+                    type="text"
+                    name="product-search"
+                    id="product-search"
+                    placeholder="Search Products"
+                />
+                <i
+                    onClick={handleClearBtn}
+                    className="fas fa-times"
+                ></i>
+            </div>
+            <div className="results-wrap">
+                <ul>
+                    {filteredProducts.map((product) => {
+                        return <li key={product} className='list-item'><a href='#'>{product}</a></li>
+                    })}
+                </ul>
+            </div>
+        </div>
+    );
 }
 
 export default SearchBar;
