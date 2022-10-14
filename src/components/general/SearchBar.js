@@ -1,6 +1,8 @@
 import '/Users/kumarssw/MyProjects/xem/src/css/components/searchBar.css';
 import React, {useState} from 'react';
 
+
+// Reference : https://codepen.io/geoffbuell/pen/bGgwEQj
 function SearchBar() {
     const [searchVal, setSearchVal] = React.useState('');
 
