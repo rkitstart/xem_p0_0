@@ -7,12 +7,8 @@ function SearchBar() {
     const [searchVal, setSearchVal] = React.useState('');
 
     let products = [
-        'apples', 'bananas', 'grapefruit', 'kiwi', 'avocados',
-        'lettuce', 'tomatoes', 'cheese', 'bread', 'yogurt',
-        'peas', 'carrots', 'broccoli', 'beans', 'pizza',
-        'pasta', 'rice', 'cereal', 'butter', 'milk',
-        'eggs', 'onions', 'garlic', 'honey', 'soup',
-        'salt', 'pepper', 'oregano', 'basil', 'paprika'
+        'pandit ji', 'event manager', 'caterer', 'light', 'decor',
+        'sound', 'dj', 'dance program', 'entertainment program'
     ];
 
     const handleInput = (e) => {
