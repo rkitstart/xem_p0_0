@@ -1,4 +1,4 @@
-import '/Users/kumarssw/MyProjects/xem/src/css/components/tiles.css';
+import '/Users/kumarssw/MyProjects/xem/src/css/components/general/tiles.css';
 
 // Reference : https://codepen.io/adambusha/pen/ZeBodz
 function Tiles() {

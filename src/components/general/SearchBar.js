@@ -1,4 +1,4 @@
-import '/Users/kumarssw/MyProjects/xem/src/css/components/searchBar.css';
+import '/Users/kumarssw/MyProjects/xem/src/css/components/general/searchBar.css';
 import React, {useState} from 'react';
 
 
@@ -39,7 +39,7 @@ function SearchBar() {
                     type="text"
                     name="product-search"
                     id="product-search"
-                    placeholder="Search Products"
+                    placeholder="Search Services"
                 />
                 <i
                     onClick={handleClearBtn}

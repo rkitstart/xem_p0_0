@@ -1,13 +1,12 @@
-
+import '/Users/kumarssw/MyProjects/xem/src/css/components/general/home.css';
+import SearchBar from "./SearchBar";
+import Tiles from "./Tiles";
 
 function Home() {
     return (
-        <div>
-            <a> Pandit Ji</a>
-            <a> Event Manager</a>
-            <a> Caterer</a>
-            <a> Light & Decor</a>
-            <a> Sound & DJ</a>
+        <div className='home'>
+            <SearchBar/>
+            <Tiles/>
         </div>
     );
 }
