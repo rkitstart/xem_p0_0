@@ -3,8 +3,8 @@ import React, {useState} from 'react';
 
 
 // Reference : https://codepen.io/geoffbuell/pen/bGgwEQj
-function SearchBar() {
-    const [searchVal, setSearchVal] = React.useState('');
+function SearchBar(props) {
+    const [searchVal, setSearchVal] = React.useState(props.search);
 
     let products = [
         'pandit ji', 'event manager', 'caterer', 'light', 'decor',

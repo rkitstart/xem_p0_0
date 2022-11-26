@@ -5,7 +5,7 @@ import Tiles from "./Tiles";
 function Home() {
     return (
         <div className='home'>
-            <SearchBar/>
+            <SearchBar search=""/>
             <Tiles/>
         </div>
     );
