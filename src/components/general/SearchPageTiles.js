@@ -1,9 +1,11 @@
 import '/Users/kumarssw/MyProjects/xem/src/css/components/general/SearchPageTiles.css';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 function SearchPageTiles() {
     return (
         <div>
             <div className="searchpage-table">
+                <Link to="/detailPage" className={'link'}>
                 <div className="searchpage-tile">
                     <div className="item-image-parent">
                         <div className="item-image-main">
@@ -22,6 +24,7 @@ function SearchPageTiles() {
                         </div>
                     </div>
                 </div>
+                </Link>
 
                 <div className="searchpage-tile">
                     <div className="item-image-parent">

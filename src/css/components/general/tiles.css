@@ -68,3 +68,8 @@ svg {
 .box:hover::after {
     opacity: 1;
 }
+
+.link {
+    color: black;
+    text-decoration: none;
+}

@@ -1,13 +1,16 @@
 import '/Users/kumarssw/MyProjects/xem/src/css/components/general/tiles.css';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 // Reference : https://codepen.io/adambusha/pen/ZeBodz
 function Tiles() {
     return (
         <div>
             <div className="row">
-                <div className="box">
-                    Pandit Ji
-                </div>
+                <Link to="/searchPage" className={'link'}>
+                    <div className="box">
+                        Pandit Ji
+                    </div>
+                </Link>
                 <div className="box">
                     Event Manager
                 </div>
