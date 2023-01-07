@@ -6,28 +6,38 @@ function Tiles() {
     return (
         <div>
             <div className="row">
-                <Link to="/searchPage" className={'link'}>
+                <Link to="/panditJi" className={'link'}>
                     <div className="box">
                         Pandit Ji
                     </div>
                 </Link>
-                <div className="box">
-                    Event Manager
-                </div>
-                <div className="box">
-                    Caterer
-                </div>
+                <Link to="/eventManager" className={'link'}>
+                    <div className="box">
+                        Event Manager
+                    </div>
+                </Link>
+                <Link to="/caterers" className={'link'}>
+                    <div className="box">
+                        Caterer
+                    </div>
+                </Link>
             </div>
             <div className="row">
-                <div className="box">
-                    Light & Decor
-                </div>
-                <div className="box">
-                    Sound & DJ
-                </div>
-                <div className="box">
-                    Dance & Entertainments
-                </div>
+                <Link to="/lightAndDecor" className={'link'}>
+                    <div className="box">
+                        Light & Decor
+                    </div>
+                </Link>
+                <Link to="/soundAndDJ" className={'link'}>
+                    <div className="box">
+                        Sound & DJ
+                    </div>
+                </Link>
+                <Link to="/danceAndEntertainment" className={'link'}>
+                    <div className="box">
+                        Dance & Entertainments
+                    </div>
+                </Link>
             </div>
         </div>
     );
