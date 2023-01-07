@@ -1,4 +1,4 @@
-import '/Users/kumarssw/MyProjects/xem/src/css/components/general/SearchPageTiles.css';
+import '/Users/kumarssw/MyProjects/xem_p0/src/css/components/general/SearchPageTiles.css';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 function SearchPageTiles() {

@@ -1,4 +1,4 @@
-import '/Users/kumarssw/MyProjects/xem/src/css/components/general/detailPage.css';
+import '/Users/kumarssw/MyProjects/xem_p0/src/css/components/general/detailPage.css';
 
 function DetailPage() {
     return (
