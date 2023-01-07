@@ -1,9 +1,7 @@
-import Header from "../general/Header";
 
 function EventManager() {
     return (
         <div>
-            <Header/>
             <h1>Event Managers</h1>
             <h2>Delhi</h2>
             <h2>Bengaluru</h2>

@@ -9,11 +9,13 @@ import LightAndDecor from "./components/pages/LightAndDecor";
 import SoundAndDJ from "./components/pages/SoundAndDJ";
 import DanceAndEntertainment from "./components/pages/DanceAndEntertainment";
 import Footer from "./components/general/Footer";
+import Header from "./components/general/Header";
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
+        <Header/>
         <Router>
             <Routes>
                 <Route exact path='/' element={<Home/>}></Route>

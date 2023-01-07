@@ -1,9 +1,8 @@
-import Header from "../general/Header";
+
 
 function DanceAndEntertainment() {
     return (
         <div>
-            <Header/>
             <h1>Dance & Entertainment</h1>
             <h2>Delhi</h2>
             <h2>Bengaluru</h2>
