@@ -8,6 +8,7 @@ import Caterers from "./components/pages/Caterers";
 import LightAndDecor from "./components/pages/LightAndDecor";
 import SoundAndDJ from "./components/pages/SoundAndDJ";
 import DanceAndEntertainment from "./components/pages/DanceAndEntertainment";
+import Footer from "./components/general/Footer";
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
                 <Route exact path='/danceAndEntertainment' element={<DanceAndEntertainment/>}></Route>
             </Routes>
         </Router>
+        <Footer/>
     </div>
   );
 }
