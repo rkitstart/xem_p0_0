@@ -1,118 +1,94 @@
-body{
-    color:#fff
+html{
+    background: Slateblue;
+    box-sizing:border-box;
 }
-.right_conatct_social_icon{
-    background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
+*{
+    box-sizing:inherit;
 }
-.contact_us{
-    background-color: #f1f1f1;
-    padding: 120px 0px;
+.contactus-main {
+    background: white;
+    width:90%;
+    max-width: 800px;
+    margin:50px auto;
+    font-family: Calibri, Arial, sans-serif;
+    padding:20px;
 }
-
-.contact_inner{
-    background-color: #fff;
-    position: relative;
-    box-shadow: 20px 22px 44px #cccc;
-    border-radius: 25px;
+h1, p{
+    text-align: center;
 }
-.contact_field{
-    padding: 60px 340px 90px 100px;
+label{
+    display:block;
+    margin:1em 0 .2em;
 }
-.right_conatct_social_icon{
-    height: 100%;
+/* single-line text, checkbox, and button */
+input, select, textarea{
+    display:block;
+    width:100%;
+    padding:.3em;
+    font-size:20px;
+    background-color:#fbfbfb;
+    border:solid 1px #CCC;
+    resize:vertical;
 }
-
-.contact_field h3{
-    color: #000;
-    font-size: 40px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    margin-bottom: 10px
+textarea{
+    min-height:180px;
 }
-.contact_field p{
-    color: #000;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 35px;
+select{
+    color:indigo;
 }
-.contact_field .form-control{
-    border-radius: 0px;
-    border: none;
-    border-bottom: 1px solid #ccc;
+option{
+    color:blue;
+    background: lavenderBlush;
 }
-.contact_field .form-control:focus{
-    box-shadow: none;
-    outline: none;
-    border-bottom: 2px solid #1325e8;
-}
-.contact_field .form-control::placeholder{
-    font-size: 13px;
-    letter-spacing: 1px;
+input[type=checkbox]{
+    display:inline;
+    width:auto;
+    color:red;
 }
 
-.contact_info_sec {
-    position: absolute;
-    background-color: #2d2d2d;
-    right: 1px;
-    top: 18%;
-    height: 340px;
-    width: 340px;
-    padding: 40px;
-    border-radius: 25px 0 0 25px;
-}
-.contact_info_sec h4{
-    letter-spacing: 1px;
-    padding-bottom: 15px;
+input[type=submit]{
+    background:lightcoral;
+    margin:1em 0 0;
+    color:white;
+    border:none;
+    border-radius:8px;
+    transition:all .3s ease-out;
 }
 
-.info_single{
-    margin: 30px 0px;
-}
-.info_single i{
-    margin-right: 15px;
-}
-.info_single span{
-    font-size: 14px;
-    letter-spacing: 1px;
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover{
+    background: lavenderBlush;
 }
 
-button.contact_form_submit {
-    background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
-    border: none;
-    color: #fff;
-    padding: 10px 15px;
-    width: 100%;
-    margin-top: 25px;
-    border-radius: 35px;
-    cursor: pointer;
-    font-size: 14px;
-    letter-spacing: 2px;
-}
-.socil_item_inner li{
-    list-style: none;
-}
-.socil_item_inner li a{
-    color: #fff;
-    margin: 0px 15px;
-    font-size: 14px;
-}
-.socil_item_inner{
-    padding-bottom: 10px;
+/* hover and focus states */
+input[type=submit]:hover,
+input[type=submit]:focus{
+    background: lightgreen;
+    outline:none;
 }
 
-.map_sec{
-    padding: 50px 0px;
+@media screen and (min-width:600px) {
+    /*  make the form 2 columns */
+    form:after{
+        content:'';
+        display:block;
+        clear:both;
+    }
+    .column{
+        width:50%;
+        padding:1em;
+        float:left;
+    }
 }
-.map_inner h4, .map_inner p{
-    color: #000;
-    text-align: center
-}
-.map_inner p{
-    font-size: 13px;
-}
-.map_bind{
-    margin-top: 50px;
-    border-radius: 30px;
-    overflow: hidden;
-}
+
+
+
+
+
+
+
+
