@@ -1,4 +1,4 @@
-import '/Users/kumarssw/MyProjects/xem_p0/src/css/components/filters/baseFilter.css';
+import '/Users/kumarssw/MyProjects/xem_p0_p0/src/css/components/filters/baseFilter.css';
 
 function BaseFilter() {
     return (

@@ -1,4 +1,4 @@
-import '/Users/kumarssw/MyProjects/xem_p0/src/css/components/general/footer.css';
+import '/Users/kumarssw/MyProjects/xem_p0_p0/src/css/components/general/footer.css';
 
 function Footer() {
     return (
@@ -26,7 +26,7 @@ function Footer() {
             </section>
 
             <footer>
-                <p>Copyright &copy; 2019 <img src="https://i.ibb.co/QDy827D/ak-logo.png" alt="logo"/> All Rights
+                <p>Copyright &copy; 2019 <img src="" alt="logo"/> All Rights
                     Reserved.</p>
             </footer>
         </div>
