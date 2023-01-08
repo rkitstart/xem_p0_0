@@ -5,32 +5,44 @@ function ContactUs() {
         <div className={'contactus-main'}>
             <form action="#" method="post">
                 <h1>Contact Us</h1>
-                <p>Please take a moment to get in touch, we will get back to you shortly.</p>
+                <p>Please take a moment to get in touch, we will get back to you within 2 hours.</p>
 
                 <div className="column">
                     <label htmlFor="the-name">Your Name</label>
                     <input type="text" name="name" id="the-name"/>
 
-                        <label htmlFor="the-email">Email Address</label>
-                        <input type="email" name="email" id="the-email"/>
+                    <label htmlFor="the-phone">Mobile Number</label>
+                    <input type="tel" name="phone" id="the-phone"/>
 
-                            <label htmlFor="the-phone">Phone Number</label>
-                            <input type="tel" name="phone" id="the-phone"/>
+                    <label htmlFor="the-email">Email Address (Optional)</label>
+                    <input type="email" name="email" id="the-email"/>
 
-                                <label htmlFor="the-reason">How can we help you?</label>
-                                <select name="reason" id="the-reason">
-                                    <option value="">Choose one</option>
-                                    <option value="web">I need web design services</option>
-                                    <option value="video">I need you to produce a video</option>
-                                    <option value="3d">I need 3D polygon things</option>
-                                </select>
+                    <label htmlFor="event-type">What Type Of Event ?</label>
+                    <select name="type" id="event-type">
+                        <option value="">Choose one</option>
+                        <option value="birthday">Birthday</option>
+                        <option value="house_warming">House Warming</option>
+                        <option value="marriage_anniversary">Marriage Anniversary</option>
+                        <option value="bhagwan_pooja">Bhagwan Pooja</option>
+                    </select>
+
+                    <label htmlFor="event-date">Event date</label>
+                    <input type="date" id="event-date" name="event_date"/>
+
+                    <label htmlFor="event-location">Event Location</label>
+                    <select name="event-location" id="event-location">
+                        <option value="">Choose one</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="other">Other</option>
+                    </select>
                 </div>
                 <div className="column">
                     <label htmlFor="the-message">Message</label>
                     <textarea name="message" id="the-message"></textarea>
-                    <label>
-                        <input type="checkbox" name="newsletter" value="yes"/> Join our mailing list?
-                    </label>
                     <input type="submit" value="Send Message"/>
                 </div>
             </form>
