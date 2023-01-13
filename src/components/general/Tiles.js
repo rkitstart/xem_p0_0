@@ -1,4 +1,3 @@
-import '/Users/kumarssw/MyProjects/xem_p0_p0/src/css/components/general/tiles.css';
 import {} from 'css-abc/components/general/tiles.css';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
