@@ -1,4 +1,4 @@
-import '/Users/kumarssw/MyProjects/xem_p0_p0/src/css/components/general/searchPage.css';
+import {} from 'css-abc/components/general/searchPage.css';
 import SearchBar from "./SearchBar";
 import SearchPageTiles from "./SearchPageTiles";
 import BaseFilter from "../filters/BaseFilter";

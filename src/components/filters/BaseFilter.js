@@ -1,4 +1,5 @@
 import '/Users/kumarssw/MyProjects/xem_p0_p0/src/css/components/filters/baseFilter.css';
+import {} from 'css-abc/components/filters/baseFilter.css';
 
 function BaseFilter() {
     return (

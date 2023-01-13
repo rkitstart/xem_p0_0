@@ -1,4 +1,4 @@
-import "/Users/kumarssw/MyProjects/xem_p0_p0/src/css/components/general/landingpage/contactUs.css";
+import {} from 'css-abc/components/general/landingpage/contactUs.css';
 
 function ContactUs() {
     return(

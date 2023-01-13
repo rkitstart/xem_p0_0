@@ -1,4 +1,4 @@
-import '/Users/kumarssw/MyProjects/xem_p0_p0/src/css/components/general/searchBar.css';
+import {} from 'css-abc/components/general/searchBar.css';
 import React, {useState} from 'react';
 
 
