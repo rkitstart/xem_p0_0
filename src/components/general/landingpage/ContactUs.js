@@ -31,8 +31,27 @@ function ContactUs() {
         // make API call with parameters and use promises to get response
         fetch("https://sdofesc9j3.execute-api.ap-northeast-1.amazonaws.com/Dev", requestOptions)
             .then(response => response.text())
-            .then(result => alert(JSON.parse(result).body))
+            .then(result => {
+                const nameElement = document.getElementById("the-name");
+                const phoneElement = document.getElementById("the-phone");
+                const emailElement = document.getElementById("the-email");
+                const eventTypeElement = document.getElementById("event-type");
+                const eventDateElement = document.getElementById("event-date");
+                const eventLocationElement = document.getElementById("event-location");
+                const messageElement = document.getElementById("the-message");
+                nameElement.value = "";
+                phoneElement.value = "";
+                emailElement.value = "";
+                eventTypeElement.value = "";
+                eventDateElement.value = "";
+                eventLocationElement.value = "";
+                messageElement.value = "";
+
+                alert(JSON.parse(result).body)
+            })
             .catch(error => console.log('error', error));
+
+
     }
 
     const handleFormChange = (e) => {
