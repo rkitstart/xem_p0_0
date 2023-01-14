@@ -13,6 +13,10 @@ html{
     font-family: Calibri, Arial, sans-serif;
     padding:20px;
 }
+
+.noHover {
+    cursor: not-allowed;
+}
 h1, p{
     text-align: center;
 }
