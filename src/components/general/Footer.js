@@ -26,7 +26,7 @@ function Footer() {
             </section>
 
             <footer>
-                <p>Copyright &copy; 2019 <img src="" alt="logo"/> All Rights
+                <p>Copyright &copy; 2023 <img src="" alt="logo"/> All Rights
                     Reserved.</p>
             </footer>
         </div>
